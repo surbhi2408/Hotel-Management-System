@@ -77,7 +77,7 @@ public class Login extends JFrame implements ActionListener{
             try{
                 ResultSet rs = c.s.executeQuery(str);
                 if(rs.next()){
-                    new HotelManagementSystem().setVisible(true);
+                    new Dashboard().setVisible(true);
                     this.setVisible(false);
                 }
                 else{
